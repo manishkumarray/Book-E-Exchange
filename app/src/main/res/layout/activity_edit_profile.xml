@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".edit_profile">
+
+    <TextView
+        android:id="@+id/edit_head"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Edit Profile"
+        android:layout_marginTop="40dp"
+        android:textStyle="bold"
+        android:textColor="#000000"
+        android:textSize="30dp"
+        android:gravity="center"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        tools:ignore="MissingConstraints" />
+
+    <ImageView
+        android:id="@+id/edit_cancel"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="40dp"
+        android:src="@drawable/cross"
+        app:layout_constraintEnd_toStartOf="@id/edit_head"
+        app:layout_constraintHorizontal_bias="0.504"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints" />
+
+    <ImageView
+        android:id="@+id/edit_save"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="35dp"
+        android:src="@drawable/check"
+        app:layout_constraintStart_toEndOf="@id/edit_head"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints" />
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/edit_v_dp"
+        android:layout_width="140dp"
+        android:layout_height="150dp"
+        android:layout_marginTop="40dp"
+        android:src="@drawable/profile_pic"
+        app:civ_border_color="#070707"
+        app:civ_border_width="5dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/edit_head"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/edit_profile_pic"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Change Profile Photo"
+        android:textColor="#2e90ff"
+        android:textSize="20dp"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/edit_v_dp"
+        tools:ignore="MissingConstraints" />
+
+    <EditText
+        android:id="@+id/edit_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/edit_profile_pic"
+        android:gravity="left"
+        tools:ignore="MissingConstraints" />
+
+    <EditText
+        android:id="@+id/edit_bio"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginRight="20dp"
+        android:gravity="left"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/edit_name"
+        tools:ignore="MissingConstraints" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

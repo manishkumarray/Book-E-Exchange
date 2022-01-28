@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/open_chat">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/msg_parent"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:clickable="true"
+        app:cardCornerRadius="5dp"
+        android:padding="10dp"
+        app:cardUseCompatPadding="true"
+        tools:ignore="MissingConstraints">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/msg_image"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="15dp"
+        android:src="@drawable/profile_pic" />
+
+        <TextView
+            android:id="@+id/msg_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="User Name"
+            android:textSize="30dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="100dp"
+            android:textColor="#424242"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/msg_last_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="No message"
+            android:textSize="20dp"
+            android:layout_marginTop="55dp"
+            android:layout_marginLeft="100dp"
+            android:textColor="#424242"
+            android:textStyle="normal" />
+
+    </androidx.cardview.widget.CardView>
+
+</RelativeLayout>

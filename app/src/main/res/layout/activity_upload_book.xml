@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f0fffa"
+    tools:context=".upload_book">
+
+    <ImageView
+        android:id="@+id/upd_iv_1"
+        android:layout_width="200dp"
+        android:layout_height="250dp"
+        android:background="#ADD8E6"
+        android:layout_marginTop="30dp"
+        android:scaleType="fitXY"
+        android:adjustViewBounds="true"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        tools:ignore="MissingConstraints" />
+
+    <ImageView
+        android:id="@+id/upd_upload_book"
+        android:layout_width="50dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="130dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:src="@drawable/ic_add_a_photo"
+        tools:ignore="MissingConstraints" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/upd_tf_bookname"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        tools:layout_editor_absoluteX="10dp"
+        tools:layout_editor_absoluteY="310dp"
+        android:background="@drawable/txt_field_curve"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/upd_iv_1"
+        tools:ignore="MissingConstraints">
+
+        <EditText
+            android:id="@+id/upd_et_bookname"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter Book Name"
+            android:textStyle="bold"
+            android:textColor="#000000"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/upd_tf_author"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        tools:layout_editor_absoluteX="10dp"
+        tools:layout_editor_absoluteY="310dp"
+        android:background="@drawable/txt_field_curve"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/upd_tf_bookname"
+        tools:ignore="MissingConstraints">
+
+        <EditText
+            android:id="@+id/upd_et_author"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter Author's Name"
+            android:textStyle="bold"
+            android:textColor="#000000"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/upd_tf_language"
+        android:layout_width="300dp"
+        android:layout_height="54dp"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/txt_field_curve"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/upd_tf_author"
+        tools:ignore="MissingConstraints">
+        <LinearLayout
+            android:id="@+id/upd_linear_layout"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <Spinner
+                android:id="@+id/upd_spinner"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="80dp"/>
+
+        </LinearLayout>
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <Button
+        android:id="@+id/upd_btn_upload"
+        android:text="Upload"
+        android:textColor="#ffffffff"
+        android:textSize="30sp"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/button"
+        android:layout_marginTop="25dp"
+        android:shadowColor="#ffed4413"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/upd_tf_language"
+        tools:ignore="MissingConstraints" />
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/pro_bottom_nav"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="160dp"
+        android:background="#19899F"
+        app:itemIconTint="#ffffff"
+        app:itemTextColor="#ffffff"
+        android:focusable="true"
+        app:menu="@menu/bottom_navigation"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/upd_btn_upload"
+        app:layout_constraintBottom_toBottomOf="parent"
+        tools:ignore="MissingConstraints" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

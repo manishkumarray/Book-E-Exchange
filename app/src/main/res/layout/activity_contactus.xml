@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".contactus">
+
+    <TextView
+        android:id="@+id/cu_head"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:background="#1cd3bf"
+        android:text="       Contact Us"
+        android:textSize="30dp"
+        android:textColor="#ffffff"
+        android:textStyle="bold"
+        android:paddingTop="18dp"
+        android:paddingLeft="20dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints" />
+
+    <ImageView
+        android:id="@+id/cu_back"
+        android:layout_width="50dp"
+        android:layout_height="40dp"
+        android:src="@drawable/ic_arrow_back"
+        android:layout_marginRight="340dp"
+        android:layout_marginTop="20dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="MissingConstraints" />
+
+    <EditText
+        android:id="@+id/contact_txt"
+        android:layout_width="380dp"
+        android:layout_height="300dp"
+        android:layout_marginTop="52dp"
+        android:background="#f0f0f0"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:paddingTop="20dp"
+        android:gravity="top"
+        android:hint="Describe Your Problem...."
+        android:textSize="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cu_head" />
+
+    <Button
+        android:id="@+id/contact_btn_next"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:text="Next"
+        android:background="#f0f0f0"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.863"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/contact_txt"
+        app:layout_constraintVertical_bias="0.0" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

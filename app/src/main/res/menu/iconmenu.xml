@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/menu_nav_feedback"
+        android:icon="@drawable/ic_menu_feedback"
+        android:title="Feedback" />
+    <item
+        android:id="@+id/menu_nav_history"
+        android:icon="@drawable/ic_menu_history"
+        android:title="History" />
+    <item
+        android:id="@+id/menu_nav_accept"
+        android:icon="@drawable/ic_req_accept"
+        android:title="Request Accept" />
+    <item
+        android:id="@+id/menu_nav_privacy"
+        android:icon="@drawable/ic_menu_privacy"
+        android:title="Privacy" />
+    <item
+        android:id="@+id/menu_nav_contact"
+        android:icon="@drawable/ic_menu_contact"
+        android:title="Contact Us" />
+    <item
+        android:id="@+id/menu_nav_delete"
+        android:icon="@drawable/ic_menu_delete"
+        android:title="Delete Account" />
+    <item
+        android:id="@+id/menu_nav_appinfo"
+        android:icon="@drawable/ic_menu_info"
+        android:title="App info" />
+</menu>

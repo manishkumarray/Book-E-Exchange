@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        app:cardCornerRadius="5dp"
+        app:cardUseCompatPadding="true"
+        app:cardElevation="8dp"
+        tools:ignore="MissingConstraints">
+
+    <TextView
+        android:id="@+id/acpt_notify"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:gravity="left"
+        android:paddingLeft="5dp"
+        android:text="User1 Accept your request for Python"
+        android:textColor="#000000"
+        android:textSize="15dp" />
+
+    <Button
+        android:id="@+id/acpt_delete"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="340dp"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/del_book"
+        android:textColor="#000000"
+        android:textSize="15dp"/>
+
+    </androidx.cardview.widget.CardView>
+</RelativeLayout>

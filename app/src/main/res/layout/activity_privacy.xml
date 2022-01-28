@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".privacy">
+
+    <TextView
+        android:id="@+id/cp_head"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:background="#1cd3bf"
+        android:text="Change Password"
+        android:textSize="30dp"
+        android:textColor="#ffffff"
+        android:textStyle="bold"
+        android:paddingTop="20dp"
+        android:paddingLeft="20dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints" />
+
+
+    <EditText
+        android:id="@+id/cp_Cpassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="50dp"
+        android:gravity="left"
+        android:hint="Enter Your current password"
+        app:layout_constraintTop_toBottomOf="@+id/cp_head"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        tools:ignore="MissingConstraints" />
+
+    <EditText
+        android:id="@+id/cp_change_password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="20dp"
+        android:gravity="left"
+        android:hint="Enter New Password"
+        app:layout_constraintTop_toBottomOf="@+id/cp_Cpassword"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        tools:ignore="MissingConstraints" />
+
+    <EditText
+        android:id="@+id/cp_reenter_password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="20dp"
+        android:gravity="left"
+        android:hint="Re-enter Your New Password"
+        app:layout_constraintTop_toBottomOf="@+id/cp_change_password"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/cp_btn_cancel"
+        android:layout_width="112dp"
+        android:layout_height="44dp"
+        android:text="Cancel"
+        android:background="@drawable/fb_btn_cancel"
+        app:layout_constraintTop_toBottomOf="@id/cp_reenter_password"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/cp_btn_save"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/cp_btn_save"
+        android:layout_width="112dp"
+        android:layout_height="44dp"
+        android:text="Change"
+        android:background="@drawable/fb_btn_send"
+        app:layout_constraintTop_toBottomOf="@id/cp_reenter_password"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/cp_btn_cancel"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

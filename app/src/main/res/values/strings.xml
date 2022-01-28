@@ -1,0 +1,55 @@
+<resources>
+    <string name="app_name">Book E-Exchange</string>
+    <string name="open">open</string>
+    <string name="close">close</string>
+    <string name="title_activity_home">home</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+
+    <!--Drawer-->
+    <string name="menu_home">Home</string>
+    <string name="menu_gallery">Gallery</string>
+    <string name="menu_slideshow">Slideshow</string>
+    <string name="title_activity_profile">profile</string>
+
+    <!--Drop list Language-->
+    <string name="selected_Language">Selected Language:</string>
+    <string-array name="Languages">
+        <item>Select Language:</item>
+        <item>Assamese</item>
+        <item>Arabic</item>
+        <item>Bengali</item>
+        <item>Bodo</item>
+        <item>Dogari</item>
+        <item>English</item>
+        <item>French</item>
+        <item>German</item>
+        <item>Gujarati</item>
+        <item>Hindi</item>
+        <item>Kannada</item>
+        <item>Kashmiri</item>
+        <item>Italian</item>
+        <item>Kokani</item>
+        <item>Maithili</item>
+        <item>Manipuri</item>
+        <item>Malayalam</item>
+        <item>Marathi</item>
+        <item>Odisa</item>
+        <item>Punjabi</item>
+        <item>Sanskrit</item>
+        <item>Sindhi</item>
+        <item>Tamil</item>
+        <item>Telugu</item>
+        <item>Urdu</item>
+    </string-array>
+
+    <!--    Location -->
+    <string name="latitudeBabel">Latitude</string>
+    <string name="longitudeBabel">Longitude</string>
+
+</resources>
+

@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    tools:context=".login">
+
+    <TextView
+        android:id="@+id/lgn_head"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Login"
+        android:textStyle="bold"
+        android:textColor="#ffffff"
+        android:textSize="30dp"
+        android:gravity="left"
+        android:layout_marginRight="290dp"
+        android:layout_marginTop="20dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        tools:ignore="MissingConstraints" />
+
+    <ImageView
+        android:id="@+id/lgn_logo"
+        android:layout_width="120dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="40dp"
+        android:src="@drawable/logo"
+        android:layout_marginBottom="40dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/lgn_head"
+        tools:ignore="ContentDescription" />
+
+    <TextView
+        android:id="@+id/lgn_txt_1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_marginTop="10dp"
+        android:text="Book E-Exchange"
+        android:textSize="15dp"
+        android:textStyle="bold"
+        android:textColor="#ffffff"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/lgn_logo"
+        tools:ignore="MissingConstraints" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/lgn_txt_field_id"
+        android:layout_width="390dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="70dp"
+        tools:layout_editor_absoluteX="10dp"
+        tools:layout_editor_absoluteY="310dp"
+        android:background="@drawable/txt_field_curve"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lgn_txt_1"
+        tools:ignore="MissingConstraints">
+
+        <EditText
+            android:id="@+id/lgn_et_id"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter Your User ID "
+            android:drawableRight="@drawable/ic_user"
+            android:textStyle="bold"
+            android:textColor="#000000"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/lgn_txt_field_psw"
+        android:layout_width="390dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        tools:layout_editor_absoluteX="10dp"
+        tools:layout_editor_absoluteY="310dp"
+        android:background="@drawable/txt_field_curve"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lgn_txt_field_id"
+        tools:ignore="MissingConstraints">
+
+        <EditText
+            android:id="@+id/lgn_et_psw"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableRight="@drawable/ic_password"
+            android:hint="Enter Your Password "
+            android:password="true"
+            android:textColor="#000000"
+            android:textStyle="bold" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <Button
+        android:id="@+id/lgn_btn_login"
+        android:text="Login"
+        android:textColor="#ffffffff"
+        android:textSize="30sp"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/button"
+        android:layout_marginTop="30dp"
+        android:shadowColor="#ffed4413"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lgn_txt_field_psw"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/lgn_txt_fgtpsw"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_marginTop="40dp"
+        android:textColor="#ffffff"
+        android:text="Forget Password ?"
+        android:textSize="15dp"
+        tools:ignore="MissingConstraints"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lgn_btn_login" />
+
+    <TextView
+        android:id="@+id/lgn_txt_2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="50dp"
+        android:layout_marginBottom="50dp"
+        android:text="Don't have account? -"
+        android:textColor="#ffffff"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@id/lgn_txt_signup"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lgn_txt_fgtpsw"
+        app:layout_constraintBottom_toBottomOf="parent"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/lgn_txt_signup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="50dp"
+        android:layout_marginRight="60dp"
+        android:text="Signup"
+        android:textStyle="bold"
+        android:textColor="#1CD3BF"
+        android:textSize="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/lgn_txt_2"
+        app:layout_constraintTop_toBottomOf="@+id/lgn_txt_fgtpsw"
+        app:layout_constraintBottom_toBottomOf="parent"
+        tools:ignore="MissingConstraints" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

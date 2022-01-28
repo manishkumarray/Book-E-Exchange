@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        app:cardCornerRadius="5dp"
+        app:cardUseCompatPadding="true"
+        app:cardElevation="8dp">
+
+        <TextView
+            android:id="@+id/req_userid"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/book_image"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="6dp"
+            android:layout_toEndOf="@+id/book_image"
+            android:text="User1"
+            android:textColor="#000000"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/req_notify"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/book_image"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="35dp"
+            android:layout_toEndOf="@+id/book_image"
+            android:text="User1 reqested for Android"
+            android:textColor="#000000"
+            android:textSize="15dp" />
+
+        <Button
+            android:id="@+id/req_accept"
+            android:layout_width="30dp"
+            android:layout_height="20dp"
+            android:layout_alignTop="@+id/book_image"
+            android:layout_marginStart="310dp"
+            android:layout_marginTop="35dp"
+            android:background="@drawable/check"
+            android:layout_toEndOf="@+id/book_image"
+            android:textColor="#000000"
+            android:textSize="15dp"/>
+
+        <Button
+            android:id="@+id/req_delete"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_alignTop="@+id/book_image"
+            android:layout_marginStart="350dp"
+            android:layout_marginTop="35dp"
+            android:background="@drawable/cross"
+            android:layout_toEndOf="@+id/book_image"
+            android:textColor="#000000"
+            android:textSize="15dp"/>
+
+
+    </androidx.cardview.widget.CardView>
+</RelativeLayout>

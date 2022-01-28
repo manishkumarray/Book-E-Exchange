@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    tools:context=".login">
+
+    <TextView
+        android:id="@+id/reg_head"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Sign Up"
+        android:textStyle="bold"
+        android:textColor="#ffffff"
+        android:textSize="30dp"
+        android:gravity="left"
+        android:layout_marginRight="260dp"
+        android:layout_marginTop="20dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        tools:ignore="MissingConstraints"/>
+
+    <ImageView
+        android:id="@+id/reg_logo"
+        android:layout_width="120dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="40dp"
+        android:src="@drawable/logo"
+        android:layout_marginBottom="40dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/reg_head"
+        tools:ignore="ContentDescription" />
+
+    <TextView
+        android:id="@+id/reg_txt_1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_marginTop="10dp"
+        android:text="Book E-Exchange"
+        android:textSize="15dp"
+        android:textStyle="bold"
+        android:textColor="#ffffff"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/reg_logo"
+        tools:ignore="MissingConstraints"/>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/reg_txt_field_name"
+        android:layout_width="390dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        tools:layout_editor_absoluteX="10dp"
+        tools:layout_editor_absoluteY="310dp"
+        android:background="@drawable/txt_field_curve"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/reg_txt_1"
+        tools:ignore="MissingConstraints">
+
+        <EditText
+            android:id="@+id/reg_et_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter Your Full Name"
+            android:drawableRight="@drawable/ic_user"
+            android:textStyle="bold"
+            android:textColor="#000000"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+<com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/reg_txt_field_phone_email"
+        android:layout_width="390dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        tools:layout_editor_absoluteX="10dp"
+        tools:layout_editor_absoluteY="310dp"
+        android:background="@drawable/txt_field_curve"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/reg_txt_field_name"
+        tools:ignore="MissingConstraints">
+
+        <EditText
+            android:id="@+id/reg_et_phone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter Phone Number"
+            android:textStyle="bold"
+            android:drawableRight="@drawable/ic_phone"
+            android:textColor="#000000"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/reg_txt_field_birthday"
+        android:layout_width="390dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        tools:layout_editor_absoluteX="10dp"
+        tools:layout_editor_absoluteY="310dp"
+        android:background="@drawable/txt_field_curve"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/reg_txt_field_phone_email"
+        tools:ignore="MissingConstraints">
+
+        <EditText
+            android:id="@+id/reg_et_dob"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter Your Date Of Birth"
+            android:drawableRight="@drawable/ic_birthday"
+            android:textStyle="bold"
+            android:textColor="#000000"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <CheckBox
+        android:id="@+id/reg_ckbox_1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:layout_marginRight="220dp"
+        android:checked="false"
+        android:theme="@style/MyCheckBox"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/reg_txt_field_birthday"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/reg_tc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="35dp"
+        android:layout_marginLeft="15dp"
+        android:text="Accept all terms and conditions"
+        android:textColor="#ffffff"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/reg_txt_field_birthday"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/reg_btn_next"
+        android:text="Next"
+        android:textColor="#ffffffff"
+        android:textSize="30sp"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/button"
+        android:layout_marginTop="25dp"
+        android:shadowColor="#ffed4413"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/reg_tc"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/reg_hv_account"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="50dp"
+        android:layout_marginBottom="40dp"
+        android:text="Already have account -"
+        android:textSize="20dp"
+        android:textColor="#ffffff"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@id/reg_txt_login"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/reg_btn_next"
+        app:layout_constraintBottom_toBottomOf="parent"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/reg_txt_login"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="40dp"
+        android:layout_marginRight="60dp"
+        android:text="Login"
+        android:textColor="#1CD3BF"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/reg_hv_account"
+        app:layout_constraintTop_toBottomOf="@+id/reg_btn_next"
+        tools:ignore="MissingConstraints"
+        app:layout_constraintBottom_toBottomOf="parent"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

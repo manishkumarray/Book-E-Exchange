@@ -1,0 +1,236 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.drawerlayout.widget.DrawerLayout
+    android:id="@+id/drawer"
+    tools:openDrawer="start"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#FFFFFF">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:title="user_id"
+            android:background="#ffffff"
+            app:titleTextColor="#19899F"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:ignore="MissingConstraints" />
+
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/pro_v_dp"
+            android:layout_width="140dp"
+            android:layout_height="150dp"
+            android:layout_marginTop="80dp"
+            app:civ_border_width="5dp"
+            app:civ_border_color="#070707"
+            android:src="@drawable/profile_pic"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:ignore="MissingConstraints" />
+
+        <TextView
+            android:id="@+id/pro_name"
+            android:layout_width="415dp"
+            android:layout_height="wrap_content"
+            android:text="Name"
+            android:textStyle="bold"
+            android:textSize="20dp"
+            android:textColor="#000000"
+            android:paddingLeft="20dp"
+            android:paddingRight="10dp"
+            android:layout_marginBottom="2dp"
+            android:layout_marginTop="20dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/pro_v_dp"
+            tools:ignore="MissingConstraints" />
+
+        <TextView
+            android:id="@+id/pro_bio"
+            android:layout_width="415dp"
+            android:layout_height="wrap_content"
+            android:text="Bio"
+            android:paddingLeft="20dp"
+            android:paddingRight="10dp"
+            android:textSize="20dp"
+            android:textColor="#000000"
+            android:layout_marginBottom="2dp"
+            android:layout_marginTop="20dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/pro_name"
+            tools:ignore="MissingConstraints" />
+
+        <Button
+            android:id="@+id/pro_btn_editprofile"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/edit_border"
+            android:text="Edit Profile"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.495"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/pro_bio"
+            tools:ignore="MissingConstraints" />
+
+        <com.google.android.material.bottomnavigation.BottomNavigationView
+            android:id="@+id/pro_bottom_nav"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="300dp"
+            android:background="#19899F"
+            android:focusable="true"
+            app:itemIconTint="#ffffff"
+            app:itemTextColor="#ffffff"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/pro_btn_editprofile"
+            app:layout_constraintVertical_bias="1.0"
+            app:menu="@menu/bottom_navigation"
+            tools:ignore="MissingConstraints" />
+
+        <TableLayout
+            android:id="@+id/pro_tv_book"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="20dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/pro_btn_editprofile" >
+            <TableRow>
+                <ImageView
+                    android:id="@+id/book1"
+                    android:layout_height="150dp"
+                    android:layout_width="100dp"
+                    android:layout_column="0"
+                    android:scaleType="fitXY"
+                    android:adjustViewBounds="true"
+                    android:layout_margin="10dp"
+                    android:background="@drawable/add_book" />
+
+                <ImageView
+                    android:id="@+id/book2"
+                    android:layout_height="150dp"
+                    android:layout_width="100dp"
+                    android:layout_column="1"
+                    android:scaleType="fitXY"
+                    android:adjustViewBounds="true"
+                    android:layout_margin="10dp"
+                    android:background="@drawable/add_book"/>
+
+                <ImageView
+                    android:id="@+id/book3"
+                    android:layout_height="150dp"
+                    android:layout_width="100dp"
+                    android:layout_column="1"
+                    android:scaleType="fitXY"
+                    android:adjustViewBounds="true"
+                    android:layout_margin="10dp"
+                    android:background="@drawable/add_book"/>
+            </TableRow>
+        </TableLayout>
+        <TableLayout
+            android:id="@+id/pro_tv_del"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/pro_tv_book" >
+
+            <TableRow>
+                <ImageView
+                    android:id="@+id/del_book1"
+                    android:layout_height="40dp"
+                    android:layout_width="40dp"
+                    android:layout_column="0"
+                    android:scaleType="fitXY"
+                    android:adjustViewBounds="true"
+                    android:src="@drawable/del_book"
+                    android:layout_marginLeft="13dp" />
+
+                <ImageView
+                    android:id="@+id/del_book2"
+                    android:layout_height="40dp"
+                    android:layout_width="40dp"
+                    android:layout_column="1"
+                    android:scaleType="fitXY"
+                    android:adjustViewBounds="true"
+                    android:src="@drawable/del_book"
+                    android:layout_marginLeft="77dp" />
+
+                <ImageView
+                    android:id="@+id/del_book3"
+                    android:layout_height="40dp"
+                    android:layout_width="40dp"
+                    android:layout_column="1"
+                    android:scaleType="fitXY"
+                    android:adjustViewBounds="true"
+                    android:src="@drawable/del_book"
+                    android:layout_marginLeft="80dp" />
+            </TableRow>
+
+    </TableLayout>
+
+        <TextView
+            android:id="@+id/verifymsg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="172dp"
+            android:layout_marginTop="3dp"
+            android:layout_marginEnd="181dp"
+            android:layout_marginBottom="2dp"
+            android:text="Your Email is not verified!!"
+            android:textColor="#ff0000"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toTopOf="@+id/pro_v_dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.461"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/toolbar"
+            app:layout_constraintVertical_bias="1.0"
+            tools:visibility="invisible" />
+
+        <Button
+            android:id="@+id/verifyEmail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="160dp"
+            android:layout_marginTop="1dp"
+            android:layout_marginBottom="122dp"
+            android:background="#79B3E1"
+            android:text="Verify"
+            app:layout_constraintBottom_toTopOf="@+id/pro_name"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.006"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/verifymsg"
+            app:layout_constraintVertical_bias="1.0"
+            tools:ignore="MissingConstraints"
+            tools:visibility="invisible" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+   <com.google.android.material.navigation.NavigationView
+        android:id="@+id/nav_menu"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        app:menu="@menu/iconmenu"
+        app:headerLayout="@layout/menuheader"/>
+
+</androidx.drawerlayout.widget.DrawerLayout>

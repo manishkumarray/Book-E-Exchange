@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/btn_nav_chatBox"
+        android:icon="@drawable/ic_chatbox"
+        android:title="Chats" />
+    <item
+        android:id="@+id/btn_nav_search"
+        android:icon="@drawable/ic_nav_search"
+        android:title="Search" />
+    <item
+        android:id="@+id/btn_nav_notification"
+        android:icon="@drawable/ic_nav_notification"
+        android:title="Notification" />
+    <item
+        android:id="@+id/btn_nav_home"
+        android:icon="@drawable/ic_nav_home"
+        android:title="Home" />
+</menu>

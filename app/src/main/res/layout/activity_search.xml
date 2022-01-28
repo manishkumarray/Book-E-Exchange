@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".search">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_marginBottom="80dp">
+
+        <androidx.appcompat.widget.SearchView
+            android:id="@+id/srch_search"
+            android:layout_width="350dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/search_btn"
+            android:gravity="left"
+            android:paddingLeft="50dp"
+            android:textSize="30dp"
+            android:layout_marginTop="30dp"
+            android:singleLine="true" />
+
+        <RadioGroup
+            android:id="@+id/srch_radio"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_margin="10dp">
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Search By Title   "
+                android:textStyle="bold"/>
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Search By Author"
+                android:textStyle="bold"/>
+        </RadioGroup>
+
+        <androidx.core.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/list_view"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+        </androidx.core.widget.NestedScrollView>
+
+    </LinearLayout>
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/pro_bottom_nav"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#19899F"
+        android:focusable="true"
+        app:itemIconTint="#ffffff"
+        app:itemTextColor="#ffffff"
+        android:layout_alignParentBottom="true"
+        app:menu="@menu/bottom_navigation"
+        tools:ignore="MissingConstraints" />
+
+</RelativeLayout>

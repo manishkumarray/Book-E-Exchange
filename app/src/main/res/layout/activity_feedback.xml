@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".feedback">
+
+    <TextView
+        android:id="@+id/fb_head"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:background="#1CD3BF"
+        android:text="Feedback"
+        android:textSize="30dp"
+        android:textColor="#ffffff"
+        android:textStyle="bold"
+        android:paddingTop="20dp"
+        android:paddingLeft="20dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints" />
+
+    <RadioGroup
+        android:id="@+id/fb_radiogroup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="50dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/fb_head">
+
+        <RadioButton
+            android:id="@+id/fb_grp_suggesstion"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="Suggest Us Something"
+            android:textStyle="bold"
+            android:textSize="20dp"
+            android:gravity="left"
+            android:textColor="#000000"
+            tools:ignore="MissingConstraints" />
+
+        <RadioButton
+            android:id="@+id/fb_feedback"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="Give Feedback"
+            android:gravity="left"
+            android:textStyle="bold"
+            android:layout_marginRight="72dp"
+            android:textSize="20dp"
+            android:textColor="#000000"
+            tools:ignore="MissingConstraints" />
+
+        <RadioButton
+            android:id="@+id/fb_Report"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:gravity="left"
+            android:text="Report a problem"
+            android:textColor="#000000"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            tools:ignore="MissingConstraints" />
+
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/fb_tv_rate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_marginTop="20dp"
+        android:text="Rate This App"
+        android:textSize="20dp"
+        android:textColor="#000000"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/fb_radiogroup"
+        tools:ignore="MissingConstraints" />
+
+    <RatingBar
+        android:id="@+id/ratingBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/fb_tv_rate"
+        app:layout_constraintBottom_toTopOf="@id/fb_desc" />
+
+    <EditText
+            android:id="@+id/fb_desc"
+            android:layout_width="380dp"
+            android:layout_height="200dp"
+            android:layout_marginTop="10dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:hint="Start typing your feedback here....."
+            android:gravity="top"
+            android:background="@drawable/edit_border"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/ratingBar"/>
+
+    <Button
+        android:id="@+id/fb_btn_cancel"
+        android:layout_width="112dp"
+        android:layout_height="44dp"
+        android:text="Cancel"
+        android:background="@drawable/fb_btn_cancel"
+        app:layout_constraintTop_toBottomOf="@id/fb_desc"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/fb_btn_save"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/fb_btn_save"
+        android:layout_width="112dp"
+        android:layout_height="44dp"
+        android:text="Send"
+        android:background="@drawable/fb_btn_send"
+        app:layout_constraintTop_toBottomOf="@id/fb_desc"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/fb_btn_cancel"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
